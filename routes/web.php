@@ -39,6 +39,13 @@ require __DIR__.'/auth.php';
 
 
 
+
+
+
+
+
+
+
 Route::get('/auth/redirect', function(){
     return Socialite::driver('google')->redirect();
 })->name('google.login');
